@@ -1,0 +1,753 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopLuxe - Complete E-Commerce Layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans antialiased min-h-screen">
+
+    <!-- navigation bar  -->
+
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        
+        <div class="flex-shrink-0 flex items-center">
+          <a href="#" class="text-2xl font-bold text-indigo-600 tracking-wide flex items-center gap-2">
+            <i class="fa-solid fa-layer-group"></i> DevBrand
+          </a>
+        </div>
+
+        <div class="hidden md:flex space-x-8 items-center">
+          <a href="#" class="text-gray-700 hover:text-black md: hover:bg-purple-400 md:hover:p-4 text-v font-medium transition">Home</a>
+          <a href="#" class="text-gray-600 hover:text-black md: hover:bg-purple-400 md:hover:p-4 font-medium transition">Features</a>
+          <a href="#" class="text-gray-600 hover:text-black md: hover:bg-purple-400 md:hover:p-4 font-medium transition">Pricing</a>
+          <a href="#" class="text-gray-600 hover:text-black md: hover:bg-purple-400 md:hover:p-4 font-medium transition">About</a>
+        </div>
+
+        <div class="hidden md:flex items-center space-x-4">
+          <a href="#" class="text-gray-600 hover:text-indigo-600 font-medium transition">Login</a>
+          <a href="#" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-xl font-medium shadow-sm transition">
+            Get Started
+          </a>
+        </div>
+
+        <div class="flex items-center md:hidden">
+          <input type="checkbox" id="menu-toggle" class="hidden peer">
+          
+          <label for="menu-toggle" class="text-gray-600 hover:text-indigo-600 cursor-pointer select-none">
+            <i class="fa-solid fa-bars text-2xl"></i>
+          </label>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+      <div class="px-2 pt-2 pb-4 space-y-1 sm:px-3">
+        <a href="#" class="block px-3 py-2.5 rounded-lg text-base font-medium text-gray-700 hover:bg-indigo-50 hover:text-indigo-600">Home</a>
+        <a href="#" class="block px-3 py-2.5 rounded-lg text-base font-medium text-gray-600 hover:bg-indigo-50 hover:text-indigo-600">Features</a>
+        <a href="#" class="block px-3 py-2.5 rounded-lg text-base font-medium text-gray-600 hover:bg-indigo-50 hover:text-indigo-600">Pricing</a>
+        <a href="#" class="block px-3 py-2.5 rounded-lg text-base font-medium text-gray-600 hover:bg-indigo-50 hover:text-indigo-600">About</a>
+        <div class="pt-4 border-t border-gray-200 flex flex-col gap-2 px-3">
+          <a href="#" class="text-center py-2 text-gray-600 font-medium">Login</a>
+          <a href="#" class="text-center bg-indigo-600 text-white py-2.5 rounded-xl font-medium">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+     <!-- navigation bar end  -->
+
+    <div class="grid grid-cols-1 xl:grid-cols-12 gap-6 p-4 max-w-[1920px] mx-auto">
+
+        <aside class="xl:col-span-3 bg-white text-gray-800 rounded-lg shadow-2xl p-4 flex flex-col justify-between border border-gray-200">
+            <div>
+                <h2 class="text-xl font-bold mb-4 pb-2 border-b border-gray-200 text-gray-900">Featured Laptops & Gadgets</h2>
+                
+                <div class="bg-gray-50 rounded-lg p-3 mb-4 shadow-sm border border-gray-100">
+                    <img src="https://images.unsplash.com/photo-1496181130207-89941d3948d2?auto=format&fit=crop&w=500&q=80" alt="Laptop" class="w-full h-44 object-cover rounded-md mb-3">
+                    <h3 class="font-bold text-base text-gray-900">Ultrabook Laptop</h3>
+                    <p class="text-blue-600 font-semibold text-sm my-1">$1299.99</p>
+                    <p class="text-xs text-gray-500 line-clamp-2">Expansive-looking: dynamic desk mockup with high performance.</p>
+                </div>
+
+                <div class="grid grid-cols-2 gap-3 mb-4">
+                    <div class="bg-gray-50 p-2 rounded border border-gray-100 text-center">
+                        <img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=150&q=80" class="w-full h-16 object-cover rounded mb-1">
+                        <p class="text-xs font-bold truncate">Keyboard</p>
+                    </div>
+                    <div class="bg-gray-50 p-2 rounded border border-gray-100 text-center">
+                        <img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=150&q=80" class="w-full h-16 object-cover rounded mb-1">
+                        <p class="text-xs font-bold truncate">Monitor</p>
+                    </div>
+                </div>
+
+                <h2 class="text-lg font-bold mb-3 pt-2 border-t border-gray-200 text-gray-900">More Tech Gear</h2>
+                <div class="grid grid-cols-2 gap-3">
+                    <div class="bg-gray-50 p-3 rounded-lg border border-gray-100 flex flex-col justify-between">
+                        <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=200&q=80" class="w-full h-24 object-cover rounded mb-2">
+                        <h4 class="text-xs font-bold text-gray-900 truncate">Smart Watch</h4>
+                        <p class="text-xs text-blue-600 font-semibold my-1">$199.99</p>
+                        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white text-[10px] py-1 rounded transition">Add to Cart</button>
+                    </div>
+                    <div class="bg-gray-50 p-3 rounded-lg border border-gray-100 flex flex-col justify-between">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=200&q=80" class="w-full h-24 object-cover rounded mb-2">
+                        <h4 class="text-xs font-bold text-gray-900 truncate">Headphones</h4>
+                        <p class="text-xs text-blue-600 font-semibold my-1">$299.99</p>
+                        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white text-[10px] py-1 rounded transition">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-6 pt-3 border-t border-gray-200 text-[11px] text-gray-400 text-center">
+                &copy; 2026 ShopLuxe. All rights reserved.
+            </div>
+        </aside>
+
+        <main class="xl:col-span-6 bg-white text-gray-800 rounded-lg shadow-2xl overflow-hidden border border-gray-200 flex flex-col justify-between">
+            <div>
+                <header class="bg-slate-900 text-white px-6 py-4 flex items-center justify-between shadow-md">
+                    <div class="flex items-center space-x-2">
+                        <i class="fa-solid fa-bag-shopping text-blue-500 text-xl"></i>
+                        <span class="text-xl font-bold tracking-wide">ShopLuxe</span>
+                    </div>
+                    <nav class="hidden md:flex space-x-6 text-sm font-medium text-gray-300">
+                        <a href="#" class="text-white hover:text-blue-400 border-b-2 border-blue-500 pb-1">Home</a>
+                        <a href="#" class="hover:text-blue-400 transition">Shop</a>
+                        <a href="#" class="hover:text-blue-400 transition">Categories</a>
+                        <a href="#" class="hover:text-blue-400 transition">Deals</a>
+                    </nav>
+                    <div class="flex items-center space-x-4">
+                        <div class="relative hidden sm:block">
+                            <input type="text" placeholder="Search..." class="bg-slate-800 text-xs rounded-full pl-4 pr-8 py-2 w-48 focus:outline-none focus:ring-2 focus:ring-blue-500 border border-slate-700 text-gray-200">
+                            <i class="fa-solid fa-magnifying-glass absolute right-3 top-2.5 text-gray-400 text-xs"></i>
+                        </div>
+                        <a href="#" class="text-sm hover:text-blue-400 transition">Account</a>
+                        <div class="relative cursor-pointer">
+                            <i class="fa-solid fa-cart-shopping text-lg text-gray-200 hover:text-blue-400 transition"></i>
+                            <span class="absolute -top-2 -right-2 bg-blue-600 text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">3</span>
+                        </div>
+                    </div>
+                </header>
+
+                <section class="p-6">
+                    <div class="bg-gradient-to-r content-center from-teal-800 to-rose-900 rounded-2xl p-8 text-white relative overflow-hidden min-h-[260px] flex items-center">
+                        <div class="max-w-md z-10">
+                            <h1 class="text-3xl md:text-4xl font-extrabold mb-2 leading-tight">New Arrivals:<br>Summer Collection</h1>
+                            <p class="text-sm text-gray-200 mb-6">Discover the latest trends in fashion, accessories, and tech items <br> crafted for modern lifestyle.</p>
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm px-6 py-2.5 rounded-lg shadow-lg transition transform hover:scale-105">Shop Now</button>
+                        </div>
+                        <div class="absolute right-0 bottom-0 top-0 w-1/2 hidden md:block">
+                            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=600&q=80" alt="Summer Collection" class="w-full h-full object-cover object-top">
+                        </div>
+                    </div>
+                </section>
+
+                <section class="px-6 mb-6">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Featured Products</h3>
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                        <div class="bg-gray-50 border border-gray-100 rounded-xl p-3 flex flex-col justify-between hover:shadow-md transition">
+                            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=200&q=80" class="w-full h-28 object-cover rounded-lg mb-2">
+                            <h4 class="text-xs font-bold text-gray-800 truncate">Minimalist Watch</h4>
+                            <p class="text-xs text-blue-600 font-bold my-1">$129.99</p>
+                            <button class="w-full bg-blue-600 hover:bg-blue-700 text-white text-[11px] py-1.5 rounded transition">Add to Cart</button>
+                        </div>
+                        <div class="bg-gray-50 border border-gray-100 rounded-xl p-3 flex flex-col justify-between hover:shadow-md transition">
+                            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=200&q=80" class="w-full h-28 object-cover rounded-lg mb-2">
+                            <h4 class="text-xs font-bold text-gray-800 truncate">Sneakers</h4>
+                            <p class="text-xs text-blue-600 font-bold my-1">$129.99</p>
+                            <button class="w-full bg-blue-600 hover:bg-blue-700 text-white text-[11px] py-1.5 rounded transition">Add to Cart</button>
+                        </div>
+                        <div class="bg-gray-50 border border-gray-100 rounded-xl p-3 flex flex-col justify-between hover:shadow-md transition">
+                            <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=200&q=80" class="w-full h-28 object-cover rounded-lg mb-2">
+                            <h4 class="text-xs font-bold text-gray-800 truncate">Leather Backpack</h4>
+                            <p class="text-xs text-blue-600 font-bold my-1">$129.99</p>
+                            <button class="w-full bg-blue-600 hover:bg-blue-700 text-white text-[11px] py-1.5 rounded transition">Add to Cart</button>
+                        </div>
+                        <div class="bg-gray-50 border border-gray-100 rounded-xl p-3 flex flex-col justify-between hover:shadow-md transition">
+                            <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=200&q=80" class="w-full h-28 object-cover rounded-lg mb-2">
+                            <h4 class="text-xs font-bold text-gray-800 truncate">Wireless Earbuds</h4>
+                            <p class="text-xs text-blue-600 font-bold my-1">$129.99</p>
+                            <button class="w-full bg-blue-600 hover:bg-blue-700 text-white text-[11px] py-1.5 rounded transition">Add to Cart</button>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="px-6 mb-6">
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Top Categories</h3>
+                    <div class="grid grid-cols-4 gap-3">
+                        <div class="relative rounded-lg overflow-hidden h-14 flex items-center justify-center group cursor-pointer shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=150&q=80" class="absolute w-full h-full object-cover brightness-50 group-hover:scale-110 transition duration-300">
+                            <span class="relative text-[11px] font-bold text-white uppercase tracking-wider">Fashion</span>
+                        </div>
+                        <div class="relative rounded-lg overflow-hidden h-14 flex items-center justify-center group cursor-pointer shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1468495244123-6c6c332eeece?auto=format&fit=crop&w=150&q=80" class="absolute w-full h-full object-cover brightness-50 group-hover:scale-110 transition duration-300">
+                            <span class="relative text-[11px] font-bold text-white uppercase tracking-wider">Electronics</span>
+                        </div>
+                        <div class="relative rounded-lg overflow-hidden h-14 flex items-center justify-center group cursor-pointer shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=150&q=80" class="absolute w-full h-full object-cover brightness-50 group-hover:scale-110 transition duration-300">
+                            <span class="relative text-[11px] font-bold text-white uppercase tracking-wider">Home Decor</span>
+                        </div>
+                        <div class="relative rounded-lg overflow-hidden h-14 flex items-center justify-center group cursor-pointer shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=150&q=80" class="absolute w-full h-full object-cover brightness-50 group-hover:scale-110 transition duration-300">
+                            <span class="relative text-[11px] font-bold text-white uppercase tracking-wider">Beauty</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <footer class="bg-slate-900 text-gray-400 px-6 py-4 border-t border-slate-800">
+                <div class="flex flex-col sm:flex-row items-center justify-between text-xs gap-3">
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-white transition">Site Links</a>
+                        <a href="#" class="hover:text-white transition">Shop</a>
+                        <a href="#" class="hover:text-white transition">Categories</a>
+                        <a href="#" class="hover:text-white transition">Account</a>
+                    </div>
+                    <div class="flex space-x-4 text-base text-gray-300">
+                        <a href="#" class="hover:text-blue-400 transition"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="hover:text-blue-500 transition"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="hover:text-pink-400 transition"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="hover:text-red-500 transition"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </footer>
+        </main>
+
+        <aside class="xl:col-span-3 bg-white text-gray-800 rounded-lg shadow-2xl p-4 flex flex-col justify-between border border-gray-200">
+            <div>
+                <h2 class="text-lg font-bold mb-3 pb-1 border-b border-gray-200 text-gray-900">Best-Selling Accessories</h2>
+                <div class="grid grid-cols-2 gap-3 mb-5">
+                    <div class="bg-gray-50 p-2.5 rounded-lg border border-gray-100 flex flex-col justify-between">
+                        <img src="https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?auto=format&fit=crop&w=150&q=80" class="w-full h-20 object-cover rounded mb-2">
+                        <h4 class="text-[11px] font-bold text-gray-900 truncate">Leather Bag</h4>
+                        <p class="text-[11px] text-blue-600 font-bold my-0.5">$199.99</p>
+                        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white text-[9px] py-1 rounded transition">Add to Cart</button>
+                    </div>
+                    <div class="bg-gray-50 p-2.5 rounded-lg border border-gray-100 flex flex-col justify-between">
+                        <img src="https://images.unsplash.com/photo-1608156639585-b3a032ef9689?auto=format&fit=crop&w=150&q=80" class="w-full h-20 object-cover rounded mb-2">
+                        <h4 class="text-[11px] font-bold text-gray-900 truncate">Wireless Buds</h4>
+                        <p class="text-[11px] text-blue-600 font-bold my-0.5">$199.99</p>
+                        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white text-[9px] py-1 rounded transition">Add to Cart</button>
+                    </div>
+                </div>
+
+                <h2 class="text-lg font-bold mb-3 pb-1 border-b border-gray-200 text-gray-900">New Tech Essentials</h2>
+                <div class="grid grid-cols-2 gap-3 mb-5">
+                    <div class="bg-gray-50 p-2.5 rounded-lg border border-gray-100 flex flex-col justify-between">
+                        <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&fit=crop&w=150&q=80" class="w-full h-20 object-cover rounded mb-2">
+                        <h4 class="text-[11px] font-bold text-gray-900 truncate">VR Headset</h4>
+                        <p class="text-[11px] text-blue-600 font-bold my-0.5">$299.99</p>
+                        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white text-[9px] py-1 rounded transition">Add to Cart</button>
+                    </div>
+                    <div class="bg-gray-50 p-2.5 rounded-lg border border-gray-100 flex flex-col justify-between">
+                        <img src="https://images.unsplash.com/photo-1579586337278-3befd40fd17a?auto=format&fit=crop&w=150&q=80" class="w-full h-20 object-cover rounded mb-2">
+                        <h4 class="text-[11px] font-bold text-gray-900 truncate">Smart Watch</h4>
+                        <p class="text-[11px] text-blue-600 font-bold my-0.5">$299.99</p>
+                        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white text-[9px] py-1 rounded transition">Add to Cart</button>
+                    </div>
+                </div>
+
+                <h2 class="text-lg font-bold mb-3 pb-1 border-b border-gray-200 text-gray-900">Smart Home Gadgets</h2>
+                <div class="grid grid-cols-2 gap-3">
+                    <div class="bg-gray-50 p-2.5 rounded-lg border border-gray-100 flex flex-col justify-between">
+                        <img src="https://images.unsplash.com/photo-1545259742-b4fe8fea361a?auto=format&fit=crop&w=150&q=80" class="w-full h-20 object-cover rounded mb-2">
+                        <h4 class="text-[11px] font-bold text-gray-900 truncate">Smart Speaker</h4>
+                        <p class="text-[11px] text-blue-600 font-bold my-0.5">$249.99</p>
+                        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white text-[9px] py-1 rounded transition">Add to Cart</button>
+                    </div>
+                    <div class="bg-gray-50 p-2.5 rounded-lg border border-gray-100 flex flex-col justify-between">
+                        <img src="https://images.unsplash.com/photo-1558089687-f282ffcbc1d5?auto=format&fit=crop&w=150&q=80" class="w-full h-20 object-cover rounded mb-2">
+                        <h4 class="text-[11px] font-bold text-gray-900 truncate">Robot Vacuum</h4>
+                        <p class="text-[11px] text-blue-600 font-bold my-0.5">$249.99</p>
+                        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white text-[9px] py-1 rounded transition">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-4 text-center text-[11px] text-gray-400">
+                Premium Tech & Lifestyle Partner
+            </div>
+        </aside>
+
+    </div>
+
+    <!-- new section for gamini  -->
+        
+       
+
+  
+
+  <header class="bg-gradient-to-r from-indigo-50 via-purple-50 to-pink-50 py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div class="space-y-6 text-center md:text-left">
+        <span class="bg-indigo-100 text-indigo-800 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full">New Arrival 2026</span>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight">
+          Upgrade Your <span class="text-indigo-600">Lifestyle</span> & Fashion
+        </h1>
+        <p class="text-gray-600 text-lg max-w-md mx-auto md:mx-0">
+          Discover curated collections tailored just for you. Get premium quality products with free shipping nationwide.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4 pt-2">
+          <a href="#" class="bg-indigo-600 hover:bg-indigo-700 text-white text-center px-8 py-3.5 rounded-xl font-semibold shadow-lg shadow-indigo-200 transition transform hover:-translate-y-0.5">
+            Shop Now <i class="fa-solid fa-arrow-right ml-2"></i>
+          </a>
+          <a href="#" class="bg-white hover:bg-gray-50 text-gray-800 text-center px-8 py-3.5 rounded-xl font-semibold border border-gray-200 transition">
+            Explore Offers
+          </a>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <div class="relative w-72 h-72 sm:w-96 sm:h-96 bg-gradient-to-tr from-indigo-400 to-purple-500 rounded-full flex items-center justify-center shadow-2xl">
+          <i class="fa-solid fa-rocket text-white text-8xl sm:text-9xl animate-bounce"></i>
+          <div class="absolute -top-4 -left-4 bg-white p-4 rounded-2xl shadow-md flex items-center gap-3">
+            <div class="p-3 bg-green-100 text-green-600 rounded-xl"><i class="fa-solid fa-bolt"></i></div>
+            <div><p class="text-xs text-gray-400">Discount</p><p class="font-bold text-sm">Up to 40% Off</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="text-center md:text-left mb-10">
+      <h2 class="text-3xl font-bold text-gray-900 tracking-tight">Shop by Category</h2>
+      <p class="text-gray-500 mt-1">Pick your favorite collection from our categories</p>
+    </div>
+    
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-6">
+      <div class="bg-white p-6 rounded-2xl border border-gray-100 text-center hover:shadow-xl transition cursor-pointer group">
+        <div class="w-16 h-16 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center mx-auto text-2xl group-hover:bg-blue-600 group-hover:text-white transition duration-300">
+          <i class="fa-solid fa-laptop"></i>
+        </div>
+        <h3 class="font-semibold text-gray-900 mt-4">Electronics</h3>
+      </div>
+      <div class="bg-white p-6 rounded-2xl border border-gray-100 text-center hover:shadow-xl transition cursor-pointer group">
+        <div class="w-16 h-16 bg-pink-50 text-pink-600 rounded-xl flex items-center justify-center mx-auto text-2xl group-hover:bg-pink-600 group-hover:text-white transition duration-300">
+          <i class="fa-solid fa-shirt"></i>
+        </div>
+        <h3 class="font-semibold text-gray-900 mt-4">Fashion</h3>
+      </div>
+      <div class="bg-white p-6 rounded-2xl border border-gray-100 text-center hover:shadow-xl transition cursor-pointer group">
+        <div class="w-16 h-16 bg-amber-50 text-amber-600 rounded-xl flex items-center justify-center mx-auto text-2xl group-hover:bg-amber-600 group-hover:text-white transition duration-300">
+          <i class="fa-solid fa-couch"></i>
+        </div>
+        <h3 class="font-semibold text-gray-900 mt-4">Furniture</h3>
+      </div>
+      <div class="bg-white p-6 rounded-2xl border border-gray-100 text-center hover:shadow-xl transition cursor-pointer group">
+        <div class="w-16 h-16 bg-purple-50 text-purple-600 rounded-xl flex items-center justify-center mx-auto text-2xl group-hover:bg-purple-600 group-hover:text-white transition duration-300">
+          <i class="fa-solid fa-dumbbell"></i>
+        </div>
+        <h3 class="font-semibold text-gray-900 mt-4">Fitness</h3>
+      </div>
+    </div>
+  </section>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 bg-white rounded-3xl my-6 shadow-sm border border-gray-100">
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-10 gap-4">
+      <div>
+        <h2 class="text-3xl font-bold text-gray-900 tracking-tight">Trending Products</h2>
+        <p class="text-gray-500 mt-1">Most loved items by our customers this week</p>
+      </div>
+      <a href="#" class="text-indigo-600 font-semibold flex items-center gap-1 hover:gap-2 transition-all">
+        View All Products <i class="fa-solid fa-arrow-right text-sm"></i>
+      </a>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      
+      <div class="group bg-white rounded-2xl overflow-hidden border border-gray-100 flex flex-col justify-between hover:shadow-2xl transition duration-300">
+        <div class="bg-gray-100 h-64 flex items-center justify-center relative">
+          <i class="fa-solid fa-headphones text-gray-400 text-7xl group-hover:scale-110 transition duration-300"></i>
+          <span class="absolute top-3 left-3 bg-indigo-600 text-white text-xs font-bold px-2.5 py-1 rounded-lg">Hot</span>
+        </div>
+        <div class="p-5 space-y-2">
+          <span class="text-xs text-gray-400 uppercase tracking-wider font-semibold">Electronics</span>
+          <h3 class="font-bold text-gray-900 text-lg hover:text-indigo-600 cursor-pointer transition">Wireless ANC Headphones</h3>
+          <div class="flex items-center gap-1 text-amber-400 text-xs">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star text-gray-200"></i>
+            <span class="text-gray-400 ml-1 font-medium">(42)</span>
+          </div>
+          <div class="flex items-center justify-between pt-2">
+            <span class="text-xl font-extrabold text-gray-900">$129.00</span>
+            <button class="bg-gray-900 hover:bg-indigo-600 text-white p-2.5 rounded-xl transition cursor-pointer">
+              <i class="fa-solid fa-cart-plus"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="group bg-white rounded-2xl overflow-hidden border border-gray-100 flex flex-col justify-between hover:shadow-2xl transition duration-300">
+        <div class="bg-gray-100 h-64 flex items-center justify-center relative">
+          <i class="fa-solid fa-clock text-gray-400 text-7xl group-hover:scale-110 transition duration-300"></i>
+        </div>
+        <div class="p-5 space-y-2">
+          <span class="text-xs text-gray-400 uppercase tracking-wider font-semibold">Accessories</span>
+          <h3 class="font-bold text-gray-900 text-lg hover:text-indigo-600 cursor-pointer transition">Minimalist Smart Watch</h3>
+          <div class="flex items-center gap-1 text-amber-400 text-xs">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star text-amber-400"></i>
+            <span class="text-gray-400 ml-1 font-medium">(89)</span>
+          </div>
+          <div class="flex items-center justify-between pt-2">
+            <span class="text-xl font-extrabold text-gray-900">$199.00</span>
+            <button class="bg-gray-900 hover:bg-indigo-600 text-white p-2.5 rounded-xl transition cursor-pointer">
+              <i class="fa-solid fa-cart-plus"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="group bg-white rounded-2xl overflow-hidden border border-gray-100 flex flex-col justify-between hover:shadow-2xl transition duration-300">
+        <div class="bg-gray-100 h-64 flex items-center justify-center relative">
+          <i class="fa-solid fa-shoe-prints text-gray-400 text-7xl group-hover:scale-110 transition duration-300"></i>
+          <span class="absolute top-3 left-3 bg-red-500 text-white text-xs font-bold px-2.5 py-1 rounded-lg">Sale</span>
+        </div>
+        <div class="p-5 space-y-2">
+          <span class="text-xs text-gray-400 uppercase tracking-wider font-semibold">Fashion</span>
+          <h3 class="font-bold text-gray-900 text-lg hover:text-indigo-600 cursor-pointer transition">Premium Air Sneakers</h3>
+          <div class="flex items-center gap-1 text-amber-400 text-xs">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-solid fa-star text-gray-200"></i>
+            <span class="text-gray-400 ml-1 font-medium">(14)</span>
+          </div>
+          <div class="flex items-center justify-between pt-2">
+            <div class="flex flex-col">
+              <span class="text-xl font-extrabold text-gray-900">$79.00</span>
+              <span class="text-xs text-gray-400 line-through">$110.00</span>
+            </div>
+            <button class="bg-gray-900 hover:bg-indigo-600 text-white p-2.5 rounded-xl transition cursor-pointer">
+              <i class="fa-solid fa-cart-plus"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="group bg-white rounded-2xl overflow-hidden border border-gray-100 flex flex-col justify-between hover:shadow-2xl transition duration-300">
+        <div class="bg-gray-100 h-64 flex items-center justify-center relative">
+          <i class="fa-solid fa-glasses text-gray-400 text-7xl group-hover:scale-110 transition duration-300"></i>
+        </div>
+        <div class="p-5 space-y-2">
+          <span class="text-xs text-gray-400 uppercase tracking-wider font-semibold">Accessories</span>
+          <h3 class="font-bold text-gray-900 text-lg hover:text-indigo-600 cursor-pointer transition">Urban Polarized Sunglasses</h3>
+          <div class="flex items-center gap-1 text-amber-400 text-xs">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star text-gray-200"></i>
+            <span class="text-gray-400 ml-1 font-medium">(31)</span>
+          </div>
+          <div class="flex items-center justify-between pt-2">
+            <span class="text-xl font-extrabold text-gray-900">$45.00</span>
+            <button class="bg-gray-900 hover:bg-indigo-600 text-white p-2.5 rounded-xl transition cursor-pointer">
+              <i class="fa-solid fa-cart-plus"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+   <!-- new secrton abar  -->
+
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      
+      <div class="bg-white p-6 rounded-2xl border border-gray-100 flex items-center gap-4 shadow-sm hover:shadow-md transition">
+        <div class="w-12 h-12 bg-indigo-50 text-indigo-600 rounded-xl flex items-center justify-center text-xl flex-shrink-0">
+          <i class="fa-solid fa-truck-fast"></i>
+        </div>
+        <div>
+          <h4 class="font-bold text-gray-950 text-sm">Free Shipping</h4>
+          <p class="text-xs text-gray-500 mt-0.5">On all orders over $50</p>
+        </div>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl border border-gray-100 flex items-center gap-4 shadow-sm hover:shadow-md transition">
+        <div class="w-12 h-12 bg-green-50 text-green-600 rounded-xl flex items-center justify-center text-xl flex-shrink-0">
+          <i class="fa-solid fa-shield-halved"></i>
+        </div>
+        <div>
+          <h4 class="font-bold text-gray-950 text-sm">Secure Payment</h4>
+          <p class="text-xs text-gray-500 mt-0.5">100% protected checkout</p>
+        </div>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl border border-gray-100 flex items-center gap-4 shadow-sm hover:shadow-md transition">
+        <div class="w-12 h-12 bg-amber-50 text-amber-600 rounded-xl flex items-center justify-center text-xl flex-shrink-0">
+          <i class="fa-solid fa-rotate-left"></i>
+        </div>
+        <div>
+          <h4 class="font-bold text-gray-950 text-sm">Easy Returns</h4>
+          <p class="text-xs text-gray-500 mt-0.5">30 days money-back guarantee</p>
+        </div>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl border border-gray-100 flex items-center gap-4 shadow-sm hover:shadow-md transition">
+        <div class="w-12 h-12 bg-purple-50 text-purple-600 rounded-xl flex items-center justify-center text-xl flex-shrink-0">
+          <i class="fa-solid fa-headset"></i>
+        </div>
+        <div>
+          <h4 class="font-bold text-gray-950 text-sm">24/7 Support</h4>
+          <p class="text-xs text-gray-500 mt-0.5">Dedicated tech support team</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-8">
+    <div class="bg-gradient-to-r from-purple-900 via-indigo-950 to-indigo-900 rounded-3xl p-8 md:p-12 shadow-xl relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-8">
+      
+      <div class="absolute -top-10 -right-10 w-40 h-40 bg-indigo-500 rounded-full blur-3xl opacity-30"></div>
+      <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-pink-500 rounded-full blur-3xl opacity-20"></div>
+
+      <div class="space-y-4 text-center md:text-left relative z-10 max-w-xl">
+        <span class="bg-amber-400/20 text-amber-300 border border-amber-400/30 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full">Limited Time Offer</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight">
+          Get Premium Sound. <br class="hidden sm:inline">Save Big This Season!
+        </h2>
+        <p class="text-indigo-200 text-sm sm:text-base">
+          Sign up today and get an extra <strong class="text-white font-bold">20% off</strong> on your first tech gadget purchase. Valid till midnight.
+        </p>
+      </div>
+
+      <div class="flex-shrink-0 relative z-10 w-full md:w-auto">
+        <a href="#" class="block text-center bg-white hover:bg-amber-400 text-gray-950 hover:text-black font-bold px-8 py-4 rounded-xl shadow-lg transition duration-300 transform hover:-translate-y-0.5">
+          Claim Voucher <i class="fa-solid fa-ticket ml-2"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="text-center mb-8">
+      <h3 class="text-2xl font-bold text-gray-900 tracking-tight">#ShopVerseVibes</h3>
+      <p class="text-sm text-gray-500 mt-1">Follow us on Instagram for daily lifestyle inspiration</p>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+      
+      <div class="group relative aspect-square bg-gray-200 rounded-2xl overflow-hidden cursor-pointer">
+        <div class="w-full h-full flex items-center justify-center text-gray-400 text-3xl group-hover:scale-110 transition duration-500 bg-gray-100">
+          <i class="fa-solid fa-camera"></i>
+        </div>
+        <div class="absolute inset-0 bg-indigo-600/70 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center text-white text-lg font-medium">
+          <i class="fa-brands fa-instagram mr-2"></i> Like
+        </div>
+      </div>
+
+      <div class="group relative aspect-square bg-gray-200 rounded-2xl overflow-hidden cursor-pointer">
+        <div class="w-full h-full flex items-center justify-center text-gray-400 text-3xl group-hover:scale-110 transition duration-500 bg-gray-100">
+          <i class="fa-solid fa-bag-shopping"></i>
+        </div>
+        <div class="absolute inset-0 bg-indigo-600/70 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center text-white text-lg font-medium">
+          <i class="fa-brands fa-instagram mr-2"></i> View
+        </div>
+      </div>
+
+      <div class="group relative aspect-square bg-gray-200 rounded-2xl overflow-hidden cursor-pointer">
+        <div class="w-full h-full flex items-center justify-center text-gray-400 text-3xl group-hover:scale-110 transition duration-500 bg-gray-100">
+          <i class="fa-solid fa-shirt"></i>
+        </div>
+        <div class="absolute inset-0 bg-indigo-600/70 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center text-white text-lg font-medium">
+          <i class="fa-brands fa-instagram mr-2"></i> Love
+        </div>
+      </div>
+
+      <div class="group relative aspect-square bg-gray-200 rounded-2xl overflow-hidden cursor-pointer">
+        <div class="w-full h-full flex items-center justify-center text-gray-400 text-3xl group-hover:scale-110 transition duration-500 bg-gray-100">
+          <i class="fa-solid fa-laptop"></i>
+        </div>
+        <div class="absolute inset-0 bg-indigo-600/70 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center text-white text-lg font-medium">
+          <i class="fa-brands fa-instagram mr-2"></i> Shop
+        </div>
+      </div>
+
+      <div class="group relative aspect-square bg-gray-200 rounded-2xl overflow-hidden cursor-pointer hidden lg:block">
+        <div class="w-full h-full flex items-center justify-center text-gray-400 text-3xl group-hover:scale-110 transition duration-500 bg-gray-100">
+          <i class="fa-solid fa-mug-hot"></i>
+        </div>
+        <div class="absolute inset-0 bg-indigo-600/70 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center text-white text-lg font-medium">
+          <i class="fa-brands fa-instagram mr-2"></i> Inspired
+        </div>
+      </div>
+
+      <div class="group relative aspect-square bg-gray-200 rounded-2xl overflow-hidden cursor-pointer hidden lg:block">
+        <div class="w-full h-full flex items-center justify-center text-gray-400 text-3xl group-hover:scale-110 transition duration-500 bg-gray-100">
+          <i class="fa-solid fa-gift"></i>
+        </div>
+        <div class="absolute inset-0 bg-indigo-600/70 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center text-white text-lg font-medium">
+          <i class="fa-brands fa-instagram mr-2"></i> Win
+        </div>
+      </div>
+
+    </div>
+  </section>
+    <!-- new secrton abar  -->
+
+    <!-- new section  -->
+
+   
+      <!-- Main Wrapper Grid -->
+  <div class=" w-[1500px] h-[600px] mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col lg:flex-row gap-6">
+  
+  <!-- ================= LEFT SIDE: CATEGORIES MENU ================= -->
+  <aside class="w-full lg:w-1/4 bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden h-fit">
+    <!-- Header -->
+    <div class="bg-emerald-600 text-white px-5 py-4 flex items-center gap-3 font-semibold text-sm tracking-wide">
+      <i class="fa-solid fa-bars"></i> All Categories
+    </div>
+    
+    <!-- Category Items List -->
+    <nav class="divide-y divide-gray-100">
+      <a href="#" class="flex items-center justify-between px-5 py-3 text-sm text-gray-600   transition group">
+        <span class="flex items-center gap-3"><i class="fa-solid fa-apple-whole text-gray-400 group-hover:text-emerald-500 hover:bg-green-600 hover:text-white"></i> Fresh Fruit</span>
+        <i class="fa-solid fa-chevron-right text-xs text-gray-300 group-hover:text-emerald-500"></i>
+      </a>
+      
+      <!-- Active / Highlighted Category (Vegetables) -->
+      <a href="#" class="flex items-center justify-between px-5 py-3 text-sm bg-emerald-600 text-white font-medium transition">
+        <span class="flex items-center gap-3"><i class="fa-solid fa-carrot"></i> Vegetables</span>
+        <i class="fa-solid fa-chevron-right text-xs opacity-80"></i>
+      </a>
+      
+      <a href="#" class="flex items-center hover:bg-green-600 hover:text-white justify-between px-5 py-3 text-sm text-gray-600   transition group">
+        <span class="flex items-center gap-3"><i class="fa-solid fa-fish"></i> River Fish</span>
+        <i class="fa-solid fa-chevron-right text-xs text-gray-300 group-hover:text-emerald-500"></i>
+      </a>
+      
+      <a href="#" class="flex items-center justify-between hover:bg-green-600 hover:text-white  px-5 py-3 text-sm text-gray-600   transition group">
+        <span class="flex items-center gap-3"><i class="fa-solid fa-drumstick-bite text-gray-400 group-hover:text-emerald-500"></i> Chicken & Meat</span>
+        <i class="fa-solid fa-chevron-right text-xs text-gray-300 group-hover:text-emerald-500"></i>
+      </a>
+      
+      <a href="#" class="flex items-center justify-between hover:bg-green-600 hover:text-white px-5 py-3 text-sm text-gray-600   transition group">
+        <span class="flex items-center gap-3"><i class="fa-solid fa-faucet-drip text-gray-400 group-hover:text-emerald-500"></i> Drink & Water</span>
+        <i class="fa-solid fa-chevron-right text-xs text-gray-300 group-hover:text-emerald-500"></i>
+      </a>
+      
+      <a href="#" class="flex items-center justify-between hover:bg-green-600 hover:text-white px-5 py-3 text-sm text-gray-600   transition group">
+        <span class="flex items-center gap-3"><i class="fa-solid fa-ice-cream text-gray-400 group-hover:text-emerald-500"></i> Yogurt & Ice Cream</span>
+        <i class="fa-solid fa-chevron-right text-xs text-gray-300 group-hover:text-emerald-500"></i>
+      </a>
+      
+      <a href="#" class="flex items-center justify-between hover:bg-green-600 hover:text-white px-5 py-3 text-sm text-gray-600   transition group">
+        <span class="flex items-center gap-3"><i class="fa-solid fa-bread-slice text-gray-400 group-hover:text-emerald-500"></i> Cake & Bread</span>
+        <i class="fa-solid fa-chevron-right text-xs text-gray-300 group-hover:text-emerald-500"></i>
+      </a>
+      
+      <a href="#" class="flex items-center justify-between hover:bg-green-700 px-5 py-3 text-sm text-gray-600   transition group">
+        <span class="flex items-center gap-3"><i class="fa-solid fa-cheese text-gray-400 group-hover:text-emerald-500"></i> Butter & Cream</span>
+        <i class="fa-solid fa-chevron-right text-xs text-gray-300 group-hover:text-emerald-500"></i>
+      </a>
+
+      <a href="#" class="flex items-center justify-between hover:bg-green-600 hover:text-white px-5 py-3 text-sm text-gray-600   transition group">
+        <span class="flex items-center gap-3"><i class="fa-solid fa-kitchen-set text-gray-400 group-hover:text-emerald-500"></i> Cooking</span>
+        <i class="fa-solid fa-chevron-right text-xs text-gray-300 group-hover:text-emerald-500"></i>
+      </a>
+      
+      <a href="#" class="flex items-center gap-3 px-5 py-3.5 text-sm text-gray-500  transition font-medium">
+        <i class="fa-solid fa-plus text-xs"></i> View all Category
+      </a>
+    </nav>
+  </aside>
+
+  <!-- ================= RIGHT SIDE: HERO BANNER ================= -->
+  <section class="w-full lg:w-3/4 bg-[#0B3C27] rounded-2xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between relative overflow-hidden min-h-[420px]">
+    
+    <!-- Left Text Block -->
+    <div class="space-y-4 text-white z-10 text-center md:text-left max-w-md">
+      <p class="text-emerald-400 text-xs font-bold uppercase tracking-widest">
+        Welcome to Ecobazar
+      </p>
+      <h1 class="text-4xl sm:text-5xl font-black tracking-tight leading-tight">
+        Fresh & Healthy <br> Organic Food
+      </h1>
+      <div class="flex items-center justify-center md:justify-start gap-2 pt-1">
+        <span class="text-gray-300 text-lg">Sale up to</span>
+        <span class="bg-amber-400 text-slate-950 font-black px-2.5 py-0.5 rounded text-lg shadow">48% OFF</span>
+      </div>
+      <div class="pt-4">
+        <a href="#" class="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold px-6 py-3 rounded-full shadow-lg transition transform hover:scale-105 cursor-pointer">
+          Shop now <i class="fa-solid fa-arrow-right text-sm"></i>
+        </a>
+      </div>
+      
+      <!-- Dots Indicator -->
+      <div class="flex justify-center md:justify-start gap-2 pt-8">
+        <span class="w-2.5 h-2.5 rounded-full bg-white opacity-100 cursor-pointer"></span>
+        <span class="w-2.5 h-2.5 rounded-full bg-white/40 hover:bg-white/70 transition cursor-pointer"></span>
+        <span class="w-2.5 h-2.5 rounded-full bg-white/40 hover:bg-white/70 transition cursor-pointer"></span>
+      </div>
+    </div>
+
+    <!-- Right Image Presentation Block -->
+    <div class="mt-8 md:mt-0 relative flex justify-center z-10 w-full md:w-auto">
+      <!-- Food image reference matching foodtempt_1.jpg structure -->
+      <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=500&q=80" 
+           alt="Fresh Organic Food Bowl" 
+           class="w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 object-cover rounded-full border-8 border-[#134D34] shadow-2xl transition duration-1000 hover:rotate-180">
+    </div>
+
+    <!-- Background Decorative Light Glow -->
+    <div class="absolute -bottom-20 -right-20 w-80 h-80 bg-emerald-500 rounded-full blur-3xl opacity-20 pointer-events-none"></div>
+  </section>
+
+</div>
+ 
+     <!-- end section  -->
+
+  <footer class="bg-gray-900 text-gray-400 pt-16 pb-8 mt-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-10 border-b border-gray-800 pb-12">
+      <div class="space-y-4">
+        <a href="#" class="text-2xl font-black text-white tracking-tight flex items-center gap-2">
+          <i class="fa-solid fa-bag-shopping text-indigo-500"></i> ShopVerse
+        </a>
+        <p class="text-sm">The best marketplace to grab premium goods with comfort and ease.</p>
+        <div class="flex space-x-4 pt-2">
+          <a href="#" class="hover:text-white transition"><i class="fa-brands fa-facebook text-xl"></i></a>
+          <a href="#" class="hover:text-white transition"><i class="fa-brands fa-instagram text-xl"></i></a>
+          <a href="#" class="hover:text-white transition"><i class="fa-brands fa-twitter text-xl"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:text-white transition">About Us</a></li>
+          <li><a href="#" class="hover:text-white transition">Shop Catalog</a></li>
+          <li><a href="#" class="hover:text-white transition">Latest News</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-4">Support</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:text-white transition">Contact Support</a></li>
+          <li><a href="#" class="hover:text-white transition">Shipping & Returns</a></li>
+          <li><a href="#" class="hover:text-white transition">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="space-y-4">
+        <h4 class="text-white font-semibold">Join Our Newsletter</h4>
+        <p class="text-sm">Subscribe to get updates on discounts and coupons.</p>
+        <form class="flex gap-2">
+          <input type="email" placeholder="Your email..." class="bg-gray-800 text-white px-4 py-2 rounded-xl text-sm w-full outline-none focus:ring-2 focus:ring-indigo-500">
+          <button class="bg-indigo-600 text-white px-4 py-2 rounded-xl text-sm font-semibold hover:bg-indigo-700 transition cursor-pointer">
+            Join
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-8 text-xs text-gray-500">
+      <p> 2026 ShopVerse. All rights reserved. Created with Tailwind CSS.</p>
+    </div>
+  </footer>
+
+
+      <!-- new section for gamini  -->
+
+</body>
+</html>
+
